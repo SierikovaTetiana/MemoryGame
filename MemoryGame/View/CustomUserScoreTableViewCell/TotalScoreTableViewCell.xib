@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="totalScoreCell" rowHeight="109" id="KGk-i7-Jjw" customClass="TotalScoreTableViewCell" customModule="MemoryGame" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4U-Xk-9gJ">
+                        <rect key="frame" x="0.0" y="0.0" width="433" height="109"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Px4-cd-kRg">
+                                <rect key="frame" x="5" y="5" width="423" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cdm-07-pRZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="99"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oA9-Hn-lBP">
+                                        <rect key="frame" x="106" y="0.0" width="105.5" height="99"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l11-mI-7yt">
+                                        <rect key="frame" x="211.5" y="0.0" width="106" height="99"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orJ-ee-2Xb">
+                                        <rect key="frame" x="317.5" y="0.0" width="105.5" height="99"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="MediumButtonColor"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Px4-cd-kRg" firstAttribute="top" secondItem="S4U-Xk-9gJ" secondAttribute="top" constant="5" id="4YO-1Q-p9r"/>
+                            <constraint firstAttribute="trailing" secondItem="Px4-cd-kRg" secondAttribute="trailing" constant="5" id="NB7-yw-nTp"/>
+                            <constraint firstItem="Px4-cd-kRg" firstAttribute="leading" secondItem="S4U-Xk-9gJ" secondAttribute="leading" constant="5" id="ZC2-NM-I6A"/>
+                            <constraint firstAttribute="bottom" secondItem="Px4-cd-kRg" secondAttribute="bottom" constant="5" id="zcd-N6-acY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="S4U-Xk-9gJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8QQ-7f-y6F"/>
+                    <constraint firstItem="S4U-Xk-9gJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gjz-Tb-Xm3"/>
+                    <constraint firstAttribute="bottom" secondItem="S4U-Xk-9gJ" secondAttribute="bottom" id="QTX-nl-mGA"/>
+                    <constraint firstAttribute="trailing" secondItem="S4U-Xk-9gJ" secondAttribute="trailing" id="rT5-UD-BRC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="moves" destination="oA9-Hn-lBP" id="jEs-TA-IZB"/>
+                <outlet property="points" destination="l11-mI-7yt" id="C65-go-GLi"/>
+                <outlet property="stackView" destination="Px4-cd-kRg" id="cmY-Do-vld"/>
+                <outlet property="time" destination="orJ-ee-2Xb" id="s0p-i6-fgV"/>
+                <outlet property="userName" destination="cdm-07-pRZ" id="re1-9u-lfz"/>
+                <outletCollection property="labelsForSort" destination="cdm-07-pRZ" collectionClass="NSMutableArray" id="Z8L-r6-a3Y"/>
+                <outletCollection property="labelsForSort" destination="oA9-Hn-lBP" collectionClass="NSMutableArray" id="U2H-OH-g7P"/>
+                <outletCollection property="labelsForSort" destination="l11-mI-7yt" collectionClass="NSMutableArray" id="AZ2-sT-Qzv"/>
+                <outletCollection property="labelsForSort" destination="orJ-ee-2Xb" collectionClass="NSMutableArray" id="C2g-Zg-91b"/>
+            </connections>
+            <point key="canvasLocation" x="219.56521739130437" y="98.102678571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MediumButtonColor">
+            <color red="0.76499998569488525" green="0.74500000476837158" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
